@@ -3,6 +3,8 @@ import Root from "../pages/Root";
 import ErrorPage from "../pages/ErrorPage";
 import AddProduct from "../components/AddProduct";
 import UpdateProduct from "../components/UpdateProduct";
+import Register from "../pages/Register";
+import Login from "../pages/Login";
 
 const Routes = createBrowserRouter([
   {
@@ -17,6 +19,14 @@ const Routes = createBrowserRouter([
         {
             path: "updateProduct",
             element: <UpdateProduct></UpdateProduct>
+        },
+        {
+            path: "register",
+            element: <Register></Register>
+        },
+        {
+            path: "login",
+            element: <Login></Login>
         }
     ],
   },
