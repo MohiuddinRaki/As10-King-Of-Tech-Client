@@ -5,6 +5,8 @@ import AddProduct from "../components/AddProduct";
 import UpdateProduct from "../components/UpdateProduct";
 import Register from "../pages/Register";
 import Login from "../pages/Login";
+import MyCart from "../components/MyCart";
+import PrivateRoute from "./PrivateRoute";
 
 const Routes = createBrowserRouter([
   {
@@ -12,22 +14,34 @@ const Routes = createBrowserRouter([
     element: <Root></Root>,
     errorElement: <ErrorPage></ErrorPage>,
     children: [
-        {
-            path: "/addProduct",
-            element: <AddProduct></AddProduct>
-        },
-        {
-            path: "updateProduct",
-            element: <UpdateProduct></UpdateProduct>
-        },
-        {
-            path: "register",
-            element: <Register></Register>
-        },
-        {
-            path: "login",
-            element: <Login></Login>
-        }
+      {
+        path: "/addProduct",
+        element: (
+          <PrivateRoute>
+            <AddProduct></AddProduct>
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "updateProduct",
+        element: <UpdateProduct></UpdateProduct>,
+      },
+      {
+        path: "myCart",
+        element: (
+          <PrivateRoute>
+            <MyCart></MyCart>
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "register",
+        element: <Register></Register>,
+      },
+      {
+        path: "login",
+        element: <Login></Login>,
+      },
     ],
   },
 ]);

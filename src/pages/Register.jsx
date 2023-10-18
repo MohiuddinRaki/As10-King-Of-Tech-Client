@@ -2,6 +2,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useContext, useState } from "react";
 import { AuthContext } from "./../providers/AuthProvider";
 import { toast } from "react-toastify";
+import SocialLogin from "./SocialLogin";
 
 const Register = () => {
   const { creatUser, handleUpdateProfile } = useContext(AuthContext);
@@ -108,6 +109,7 @@ const Register = () => {
             Login
           </Link>
         </p>
+        <SocialLogin></SocialLogin>
       </div>
     </div>
   );
