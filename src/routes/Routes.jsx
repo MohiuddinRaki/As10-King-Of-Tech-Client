@@ -7,6 +7,7 @@ import Register from "../pages/Register";
 import Login from "../pages/Login";
 import MyCart from "../components/MyCart";
 import PrivateRoute from "./PrivateRoute";
+import BrandCards from "../components/BrandCards";
 
 const Routes = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ const Routes = createBrowserRouter([
     element: <Root></Root>,
     errorElement: <ErrorPage></ErrorPage>,
     children: [
+      {
+        path: "/",
+        element: <BrandCards></BrandCards>
+      },
       {
         path: "/addProduct",
         element: (
