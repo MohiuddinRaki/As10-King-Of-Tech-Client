@@ -3,6 +3,7 @@ import Footer from "../pages/Footer";
 import Banner from "./Banner";
 import FeedBack from "./FeedBack";
 import BrandCard from "./BrandCard";
+import GoogleMap from "./GoogleMap";
 
 const BrandCards = () => {
   const bannerCard = useLoaderData();
@@ -20,6 +21,7 @@ const BrandCards = () => {
         </div>
       </div>
       <FeedBack></FeedBack>
+      <GoogleMap></GoogleMap>
       <Footer></Footer>
     </div>
   );
