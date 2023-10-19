@@ -8,6 +8,7 @@ import Login from "../pages/Login";
 import MyCart from "../components/MyCart";
 import PrivateRoute from "./PrivateRoute";
 import BrandCards from "../components/BrandCards";
+import BrandProducts from "../components/BrandProducts";
 
 const Routes = createBrowserRouter([
   {
@@ -17,7 +18,13 @@ const Routes = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <BrandCards></BrandCards>
+        element: <BrandCards></BrandCards>,
+        loader: () => fetch("/Brand.json"),
+      },
+      {
+        path: "/brand/:id",
+        loader: () => fetch("/Brand.json"),
+        element: <PrivateRoute><BrandProducts></BrandProducts></PrivateRoute>
       },
       {
         path: "/addProduct",

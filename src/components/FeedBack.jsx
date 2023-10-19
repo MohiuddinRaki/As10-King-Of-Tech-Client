@@ -8,9 +8,7 @@ const FeedBack = () => {
         <div className="card card-compact bg-base-100 shadow-xl p-10">
           <figure>
             <h1>
-              Thanks to your team, our symposium was a huge success. How you can
-              extract 150 people from lunch and back into the auditorium in 5
-              minutes is a mystery to me but very much appreciated.
+            I recently bought the latest smartphone, and I couldnt be happier. The camera quality is exceptional, and the battery life is impressive. It has become an essential part of my daily life.
             </h1>
           </figure>
 
@@ -26,9 +24,7 @@ const FeedBack = () => {
         <div className="card card-compact bg-base-100 shadow-xl p-10">
           <figure>
             <h1>
-              Thank you for all your efforts with the Presidents Council on
-              International Activities. This meeting was a big success in large
-              part because of your hard work
+            My new laptop is a game-changer! Its blazing fast and handles everything I throw at it. The build quality is excellent, and the screen is gorgeous. Its a real productivity booster.
             </h1>
           </figure>
 
@@ -44,9 +40,7 @@ const FeedBack = () => {
         <div className="card card-compact bg-base-100 shadow-xl p-10">
           <figure>
             <h1>
-              Thank you for the outstanding work of The Dark Roast Events group.
-              We had a wonderful time and could not imagine pulling off our
-              meeting without the guidance of your staff.
+            I added a smart home hub to my setup, and its made my life so much more convenient. I can control everything from lights to the thermostat with my voice or phone. Setting up routines has never been easier.
             </h1>
           </figure>
 
@@ -62,9 +56,7 @@ const FeedBack = () => {
         <div className="card card-compact bg-base-100 shadow-xl p-10">
           <figure>
             <h1>
-              On behalf of my team, I would like to sincerely thankThe Dark
-              Roast Events for leading the logistical details of our program
-              with such professionalism and grace.
+            The wireless headphones I purchased are a true gem. The sound quality is superb, and they are so comfortable to wear for extended periods. The noise cancellation feature is a lifesaver during long flights..
             </h1>
           </figure>
 
@@ -80,10 +72,7 @@ const FeedBack = () => {
         <div className="card card-compact bg-base-100 shadow-xl p-10">
           <figure>
             <h1>
-              The Dark Roast Events team was an absolute pleasure to work with.
-              They were very responsive throughout the entire planning process,
-              kept our team updated on changes, and were very accommodating to
-              all our needs
+            This gaming console is a dream come true for any gamer. The graphics are mind-blowing, and the game library is extensive. Ive had endless hours of entertainment with it.
             </h1>
           </figure>
 
@@ -99,10 +88,7 @@ const FeedBack = () => {
         <div className="card card-compact bg-base-100 shadow-xl p-10">
           <figure>
             <h1>
-              The Dark Roast Events team did a great job with the Kerry
-              Conference—which was quite a logistical challenge. Thank you and
-              the whole The DRE for your great contribution to making this one
-              of the most memorable events.
+            My new fitness tracker has been a fantastic motivator for a healthier lifestyle. Its accurate in tracking my steps, heart rate, and sleep patterns. The companion app is easy to use and helps me stay on top of my fitness goals.
             </h1>
           </figure>
 

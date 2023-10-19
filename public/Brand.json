@@ -1,0 +1,32 @@
+[
+    {
+      "id": 1,
+      "picture": "https://i.ibb.co/Kh8kFtZ/apple-emblem.jpg",
+      "category": "Apple"
+    },
+    {
+      "id": 2,
+      "picture": "https://i.ibb.co/L9LDWGQ/samsung-brand-logo-phone-symbol-blue-and-white-vector-46231866.jpg",
+      "category": "Samsung"
+    },
+    {
+      "id": 3,
+      "picture": "https://i.ibb.co/hFqs5xF/LG-Logo.png",
+      "category": "LG"
+    },
+    {
+      "id": 4,
+      "picture": "https://i.ibb.co/7nYTkFN/download.png",
+      "category": "Google"
+    },
+    {
+      "id": 5,
+      "picture": "https://i.ibb.co/SXPXhNW/Xiaomi-Logonew.webp",
+      "category": "Xiaomi"
+    },
+    {
+      "id": 6,
+      "picture": "https://i.ibb.co/zr04Cq6/7.jpg",
+      "category": "Walton"
+    }
+  ]
