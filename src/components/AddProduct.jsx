@@ -12,7 +12,6 @@ const AddProduct = () => {
     const description = form.description.value;
     const rating = form.rating.value;
     const photo = form.photo.value;
-    const image = form.image.value;
     const newProduct = {
       name,
       brand,
@@ -21,7 +20,6 @@ const AddProduct = () => {
       description,
       rating,
       photo,
-      image,
     };
     console.log(newProduct);
 
@@ -153,20 +151,6 @@ const AddProduct = () => {
               <input
                 type="text"
                 name="photo"
-                required
-                placeholder="Photo URL"
-                className="input input-bordered w-full"
-              />
-            </label>
-          </div>
-          <div className="form-control">
-            <label className="label">
-              <span className="label-text text-xl font-semibold">Image</span>
-            </label>
-            <label className="input-group">
-              <input
-                type="text"
-                name="image"
                 required
                 placeholder="Photo URL"
                 className="input input-bordered w-full"

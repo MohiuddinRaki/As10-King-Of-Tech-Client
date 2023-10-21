@@ -4,6 +4,7 @@ import Banner from "./Banner";
 import FeedBack from "./FeedBack";
 import BrandCard from "./BrandCard";
 import GoogleMap from "./GoogleMap";
+import Team from "./Team";
 
 const BrandCards = () => {
   const bannerCard = useLoaderData();
@@ -21,6 +22,7 @@ const BrandCards = () => {
         </div>
       </div>
       <FeedBack></FeedBack>
+      <Team></Team>
       <GoogleMap></GoogleMap>
       <Footer></Footer>
     </div>

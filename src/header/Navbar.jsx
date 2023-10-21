@@ -23,6 +23,9 @@ const Navbar = () => {
       <li className="text-lg font-medium">
         <NavLink to="/brandUnic">BrandUnic</NavLink>
       </li>
+      {/* <li className="text-lg font-medium">
+        <NavLink to="/addBanner">Banner</NavLink>
+      </li> */}
     </>
   );
 
