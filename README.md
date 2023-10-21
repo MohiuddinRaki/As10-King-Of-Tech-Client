@@ -1,8 +1,26 @@
-# React + Vite
+# King Of Tech
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Click here for the live link: 
+[https://65243cddda108e0cee677524--cheerful-concha-87cac6.netlify.app/]
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Project Features
+
+### Features 1: Navbar
+- Displays navbar in conatinig avatar part.
+- In avatar part containing Image, name and logout button.
+
+### Features 2: Dashboard
+- Displays products-specific data and statistics.
+- Each services cart has image and brand name.
+
+### Features 3: Details
+- Display single product details page.
+- Diplay description and add to cart button in that details page.
+
+### Features 4: Register
+Displays register page with validation.
+
+### Features 5: Login
+- Displays login page with validation.
+
