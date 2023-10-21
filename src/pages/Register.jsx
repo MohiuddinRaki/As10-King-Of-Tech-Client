@@ -34,11 +34,11 @@ const Register = () => {
     }
 
     creatUser(email, password)
-      .then((res) => {
+      .then(() => {
         handleUpdateProfile(name, photo).then(() => {
           toast.success("User logged in successfully");
+          e.target.reset();
           naviGate("/");
-          console.log(res.user);
         });
       })
       .catch((error) => {

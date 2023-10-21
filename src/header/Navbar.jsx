@@ -15,10 +15,13 @@ const Navbar = () => {
         <NavLink to="/addProduct">Add Product</NavLink>
       </li>
       <li className="text-lg font-medium">
-        <NavLink to="/myCart">My Cart</NavLink>
+        <NavLink to="/cart">My Cart</NavLink>
       </li>
       <li className="text-lg font-medium">
         <NavLink to="/login">Login</NavLink>
+      </li>
+      <li className="text-lg font-medium">
+        <NavLink to="/brandUnic">BrandUnic</NavLink>
       </li>
     </>
   );
@@ -40,7 +43,7 @@ const Navbar = () => {
               {navLinks}
             </ul>
           </div>
-          <a className="btn btn-ghost normal-case text-sky-400 font-bold text-4xl pl-12 md:pl-0">
+          <a className="btn btn-ghost normal-case text-sky-400 font-bold text-4xl pl-12 md:pl-44 lg:pl-0">
             King Of Tech
           </a>
         </div>

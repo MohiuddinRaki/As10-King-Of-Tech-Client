@@ -16,7 +16,7 @@ const googleProvider = new GoogleAuthProvider();
 
 // component:
 const AuthProvider = ({ children }) => {
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState({});
   const [loading, setLoading] = useState(true);
 
   // Sign Up:
@@ -37,18 +37,18 @@ const AuthProvider = ({ children }) => {
     return signInWithPopup(auth, googleProvider);
   };
 
-  // Sign Out:
-  const logOutUser = () => {
-    setLoading(true);
-    return signOut(auth);
-  };
-
   // Update Profile:
   const handleUpdateProfile = (name, photo) => {
     return updateProfile(auth.currentUser, {
       displayName: name,
       photoURL: photo,
     });
+  };
+
+  // Sign Out:
+  const logOutUser = () => {
+    setLoading(true);
+    return signOut(auth);
   };
 
   // UnSubsCribe:

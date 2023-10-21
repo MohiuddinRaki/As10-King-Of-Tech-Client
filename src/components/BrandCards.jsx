@@ -15,7 +15,7 @@ const BrandCards = () => {
           OUR Available Brands
         </h1>
         <div className="container mx-auto p-8 md:p-16 lg:p-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-20">
-          {bannerCard.map((card, idx) => (
+          {bannerCard.slice(0, 6).map((card, idx) => (
             <BrandCard key={idx} card={card}></BrandCard>
           ))}
         </div>
