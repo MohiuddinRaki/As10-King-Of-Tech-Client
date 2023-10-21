@@ -55,8 +55,9 @@ const Routes = createBrowserRouter([
         element: <BrandUnic></BrandUnic>,
       },
       {
-        path: "/updateProduct",
+        path: "/updateProduct/:_id",
         element: <UpdateProduct></UpdateProduct>,
+        loader: () => fetch("http://localhost:5000/product"),
       },
       {
         path: "/cart",

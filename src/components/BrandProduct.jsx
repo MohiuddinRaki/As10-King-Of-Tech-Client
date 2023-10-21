@@ -35,7 +35,7 @@ const BrandProduct = ({ product }) => {
             <Link to={`/brand/${_id}`}>
               <button className="btn btn-primary">Details</button>
             </Link>
-            <Link>
+            <Link to= {`/updateProduct/${_id}`}>
               <button className="btn btn-primary">Update</button>
             </Link>
           </div>
