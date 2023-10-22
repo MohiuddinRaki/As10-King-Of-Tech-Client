@@ -3,6 +3,7 @@ import { useContext, useState } from "react";
 import { AuthContext } from "./../providers/AuthProvider";
 import { toast } from "react-toastify";
 import SocialLogin from "./SocialLogin";
+import Swal from "sweetalert2";
 
 const Register = () => {
   const { creatUser, handleUpdateProfile } = useContext(AuthContext);
@@ -40,6 +41,28 @@ const Register = () => {
           e.target.reset();
           naviGate("/");
         });
+        const newUser = { email };
+        //  send data to the server:
+        fetch("https://b8a10-brandshop-server-side-mohiuddin-raki-anzjhimip.vercel.app/user", {
+          method: "POST",
+          headers: {
+            "content-type": "application/json",
+          },
+          body: JSON.stringify(newUser),
+        })
+          .then((res) => res.json())
+          .then((data) => {
+            console.log(data);
+            if (data.insertedId) {
+              Swal.fire({
+                title: "Success!",
+                text: "User Added Successfully",
+                icon: "success",
+                confirmButtonText: "Cool",
+              });
+            }
+            e.target.reset();
+          });
       })
       .catch((error) => {
         toast.error(error.message);

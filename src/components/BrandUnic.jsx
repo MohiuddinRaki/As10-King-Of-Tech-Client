@@ -14,7 +14,7 @@ const BrandUnic = () => {
     console.log(newBrandU);
 
     //  send data to the server:
-    fetch("http://localhost:5000/brandu", {
+    fetch("https://b8a10-brandshop-server-side-mohiuddin-raki-anzjhimip.vercel.app/brandu", {
       method: "POST",
       headers: {
         "content-type": "application/json",

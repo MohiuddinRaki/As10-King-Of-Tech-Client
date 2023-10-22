@@ -1,12 +1,19 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const BrandProduct = ({ product }) => {
   const { _id, name, brand, type, price, rating, photo } = product;
 
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   return (
     <>
-      <div className="card card-compact bg-base-100 shadow-xl">
+      <div className="card card-compact bg-base-100 shadow-xl" data-aos="fade-right">
         <figure>
           <img className="h-96" src={photo} alt={name} />
         </figure>
@@ -35,7 +42,7 @@ const BrandProduct = ({ product }) => {
             <Link to={`/brand/${_id}`}>
               <button className="btn btn-primary">Details</button>
             </Link>
-            <Link to= {`/updateProduct/${_id}`}>
+            <Link to={`/updateProduct/${_id}`}>
               <button className="btn btn-primary">Update</button>
             </Link>
           </div>

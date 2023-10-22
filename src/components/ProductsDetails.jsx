@@ -1,5 +1,8 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import Swal from "sweetalert2";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const ProductsDetails = () => {
   const products = useLoaderData();
@@ -13,7 +16,7 @@ const ProductsDetails = () => {
     const newCart = { photo, name, description };
 
     //  send data to the server:
-    fetch("http://localhost:5000/cart", {
+    fetch("https://b8a10-brandshop-server-side-mohiuddin-raki-anzjhimip.vercel.app/cart", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -34,22 +37,27 @@ const ProductsDetails = () => {
       });
   };
 
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   return (
-    <div>
-      <div className="container mx-auto mt-12 card bg-base-100 shadow-xl">
-        <figure>
-          <img src={product.photo} alt={product.name} />
-        </figure>
-        <div className="card-body">
-          <h2 className="card-title">{product.description}</h2>
-          <div className="card-actions justify-start">
-            <button
-              onClick={() => handleAddCart(product)}
-              className="btn btn-primary"
-            >
-              Add Cart
-            </button>
-          </div>
+    <div
+      className="container mx-auto mt-12 card bg-base-100 shadow-xl"
+      data-aos="fade-right"
+    >
+      <figure>
+        <img src={product.photo} alt={product.name} />
+      </figure>
+      <div className="card-body">
+        <h2 className="card-title">{product.description}</h2>
+        <div className="card-actions justify-start">
+          <button
+            onClick={() => handleAddCart(product)}
+            className="btn btn-primary"
+          >
+            Add Cart
+          </button>
         </div>
       </div>
     </div>

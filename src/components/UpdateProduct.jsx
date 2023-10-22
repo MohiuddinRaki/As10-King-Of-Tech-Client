@@ -29,7 +29,7 @@ const UpdateProduct = () => {
     console.log(updateProduct);
 
     //  send data to the server:
-    fetch(`http://localhost:5000/product/${_id}`, {
+    fetch(`https://b8a10-brandshop-server-side-mohiuddin-raki-anzjhimip.vercel.app/product/${_id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",
@@ -55,7 +55,7 @@ const UpdateProduct = () => {
     <>
       <div className="bg-[#F4F3F0] p-24 my-12">
         <h2 className="text-center text-6xl font-bold mb-10">
-          Update Product: {products.name}
+          Update Product
         </h2>
         <form onSubmit={handleUpdateProduct}>
           <div className="flex gap-6">

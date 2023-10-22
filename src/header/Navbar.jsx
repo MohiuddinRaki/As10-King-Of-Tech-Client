@@ -8,30 +8,27 @@ const Navbar = () => {
 
   const navLinks = (
     <>
-      <li className="text-lg font-medium">
+      <li className="text-lg font-medium text-white">
         <NavLink to="/">Home</NavLink>
       </li>
-      <li className="text-lg font-medium">
+      <li className="text-lg font-medium text-white">
         <NavLink to="/addProduct">Add Product</NavLink>
       </li>
-      <li className="text-lg font-medium">
+      <li className="text-lg font-medium text-white">
         <NavLink to="/cart">My Cart</NavLink>
       </li>
-      <li className="text-lg font-medium">
+      <li className="text-lg font-medium text-white">
         <NavLink to="/login">Login</NavLink>
       </li>
-      <li className="text-lg font-medium">
+      <li className="text-lg font-medium text-white hidden">
         <NavLink to="/brandUnic">BrandUnic</NavLink>
       </li>
-      {/* <li className="text-lg font-medium">
-        <NavLink to="/addBanner">Banner</NavLink>
-      </li> */}
     </>
   );
 
   return (
-    <nav className="container mx-auto">
-      <div className="navbar bg-base-100">
+    <nav className="bg-gray-500">
+      <div className="navbar container mx-auto mb-10 py-10">
         <div className="navbar-start">
           <div className="dropdown dropdown-start">
             <label tabIndex={0} className="btn btn-ghost btn-circle">

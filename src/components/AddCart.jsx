@@ -1,5 +1,8 @@
 import PropTypes from "prop-types";
+import { useEffect } from "react";
 import Swal from "sweetalert2";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const AddCart = ({ cart, carts, setCarts }) => {
   const { _id, name, photo, description } = cart;
@@ -16,7 +19,7 @@ const AddCart = ({ cart, carts, setCarts }) => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/cart/${_id}`, {
+        fetch(`https://b8a10-brandshop-server-side-mohiuddin-raki-anzjhimip.vercel.app/cart/${_id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())
@@ -36,8 +39,12 @@ const AddCart = ({ cart, carts, setCarts }) => {
     });
   };
 
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   return (
-    <div className="card bg-base-100 shadow-xl">
+    <div className="card bg-base-100 shadow-xl" data-aos="fade-right">
       <figure>
         <img className="h-96" src={photo} alt={name} />
       </figure>

@@ -21,11 +21,11 @@ const Routes = createBrowserRouter([
       {
         path: "/",
         element: <BrandCards></BrandCards>,
-        loader: () => fetch("http://localhost:5000/brandu"),
+        loader: () => fetch("https://b8a10-brandshop-server-side-mohiuddin-raki-anzjhimip.vercel.app/brandu"),
       },
       {
         path: "/brandPro/:brand",
-        loader: () => fetch("http://localhost:5000/product"),
+        loader: () => fetch("https://b8a10-brandshop-server-side-mohiuddin-raki-anzjhimip.vercel.app/product"),
         element: (
           <PrivateRoute>
             <BrandProducts></BrandProducts>
@@ -34,7 +34,7 @@ const Routes = createBrowserRouter([
       },
       {
         path: "/brand/:_id",
-        loader: () => fetch("http://localhost:5000/product"),
+        loader: () => fetch("https://b8a10-brandshop-server-side-mohiuddin-raki-anzjhimip.vercel.app/product"),
         element: (
           <PrivateRoute>
             <ProductsDetails></ProductsDetails>
@@ -57,11 +57,11 @@ const Routes = createBrowserRouter([
       {
         path: "/updateProduct/:_id",
         element: <UpdateProduct></UpdateProduct>,
-        loader: () => fetch("http://localhost:5000/product"),
+        loader: () => fetch("https://b8a10-brandshop-server-side-mohiuddin-raki-anzjhimip.vercel.app/product"),
       },
       {
         path: "/cart",
-        loader: () => fetch("http://localhost:5000/cart"),
+        loader: () => fetch("https://b8a10-brandshop-server-side-mohiuddin-raki-anzjhimip.vercel.app/cart"),
         element: (
           <PrivateRoute>
             <MyCart></MyCart>
