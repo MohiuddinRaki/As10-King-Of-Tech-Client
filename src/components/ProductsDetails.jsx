@@ -16,7 +16,7 @@ const ProductsDetails = () => {
     const newCart = { photo, name, description };
 
     //  send data to the server:
-    fetch("https://b8a10-brandshop-server-side-mohiuddin-raki-anzjhimip.vercel.app/cart", {
+    fetch("https://b8a10-brandshop-server-side-mohiuddin-raki-7s8v1yz1b.vercel.app/cart", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -43,11 +43,11 @@ const ProductsDetails = () => {
 
   return (
     <div
-      className="container mx-auto mt-12 card bg-base-100 shadow-xl"
+      className="container mx-auto mt-12 card bg-gray-500 shadow-xl w-1/2"
       data-aos="fade-right"
     >
       <figure>
-        <img src={product.photo} alt={product.name} />
+        <img className="w-full h-[500px]" src={product.photo} alt={product.name} />
       </figure>
       <div className="card-body">
         <h2 className="card-title">{product.description}</h2>

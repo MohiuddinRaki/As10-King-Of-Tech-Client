@@ -11,6 +11,7 @@ import BrandCards from "../components/BrandCards";
 import BrandProducts from "../components/BrandProducts";
 import BrandUnic from "../components/BrandUnic";
 import ProductsDetails from "../components/ProductsDetails";
+import TeamForm from "../components/TeamForm";
 
 const Routes = createBrowserRouter([
   {
@@ -21,11 +22,11 @@ const Routes = createBrowserRouter([
       {
         path: "/",
         element: <BrandCards></BrandCards>,
-        loader: () => fetch("https://b8a10-brandshop-server-side-mohiuddin-raki-anzjhimip.vercel.app/brandu"),
+        loader: () => fetch("https://b8a10-brandshop-server-side-mohiuddin-raki-7s8v1yz1b.vercel.app/brandu"),
       },
       {
         path: "/brandPro/:brand",
-        loader: () => fetch("https://b8a10-brandshop-server-side-mohiuddin-raki-anzjhimip.vercel.app/product"),
+        loader: () => fetch("https://b8a10-brandshop-server-side-mohiuddin-raki-7s8v1yz1b.vercel.app/product"),
         element: (
           <PrivateRoute>
             <BrandProducts></BrandProducts>
@@ -34,7 +35,7 @@ const Routes = createBrowserRouter([
       },
       {
         path: "/brand/:_id",
-        loader: () => fetch("https://b8a10-brandshop-server-side-mohiuddin-raki-anzjhimip.vercel.app/product"),
+        loader: () => fetch("https://b8a10-brandshop-server-side-mohiuddin-raki-7s8v1yz1b.vercel.app/product"),
         element: (
           <PrivateRoute>
             <ProductsDetails></ProductsDetails>
@@ -57,11 +58,11 @@ const Routes = createBrowserRouter([
       {
         path: "/updateProduct/:_id",
         element: <UpdateProduct></UpdateProduct>,
-        loader: () => fetch("https://b8a10-brandshop-server-side-mohiuddin-raki-anzjhimip.vercel.app/product"),
+        loader: () => fetch("https://b8a10-brandshop-server-side-mohiuddin-raki-7s8v1yz1b.vercel.app/product"),
       },
       {
         path: "/cart",
-        loader: () => fetch("https://b8a10-brandshop-server-side-mohiuddin-raki-anzjhimip.vercel.app/cart"),
+        loader: () => fetch("https://b8a10-brandshop-server-side-mohiuddin-raki-7s8v1yz1b.vercel.app/cart"),
         element: (
           <PrivateRoute>
             <MyCart></MyCart>
@@ -75,6 +76,10 @@ const Routes = createBrowserRouter([
       {
         path: "login",
         element: <Login></Login>,
+      },
+      {
+        path: "/team",
+        element: <TeamForm></TeamForm>,
       },
     ],
   },

@@ -23,6 +23,9 @@ const Navbar = () => {
       <li className="text-lg font-medium text-white hidden">
         <NavLink to="/brandUnic">BrandUnic</NavLink>
       </li>
+      <li className="text-lg font-medium text-white">
+        <NavLink to="/team">Team</NavLink>
+      </li>
     </>
   );
 
@@ -32,8 +35,8 @@ const Navbar = () => {
         <div className="navbar-start">
           <div className="dropdown dropdown-start">
             <label tabIndex={0} className="btn btn-ghost btn-circle">
-              <div className="w-10 rounded-full">
-                <img src="https://i.ibb.co/2hXPm1h/e6c16c6fdc213eae670cae97c487582ad720f85e-351x351.png" />
+              <div className="items-center mr-2">
+                <img className="rounded-full" src="https://i.ibb.co/2hXPm1h/e6c16c6fdc213eae670cae97c487582ad720f85e-351x351.png" />
               </div>
             </label>
             <ul
@@ -43,7 +46,7 @@ const Navbar = () => {
               {navLinks}
             </ul>
           </div>
-          <a className="btn btn-ghost normal-case text-sky-400 font-bold text-4xl pl-12 md:pl-44 lg:pl-0">
+          <a className="btn btn-ghost normal-case text-teal-500 font-bold text-4xl pl-12 md:pl-44 lg:pl-0">
             King Of Tech
           </a>
         </div>

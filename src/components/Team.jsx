@@ -5,7 +5,7 @@ const Team = () => {
         Team Members
       </h1>
       <div className="p-8 md:p-16 lg:p-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 my-10">
-        <div className="rounded-2xl bg-base-100 shadow-xl 96">
+        <div className="rounded-2xl  bg-base-100 shadow-xl">
           <figure>
             <img
               className="rounded-t-2xl h-96 w-full"
@@ -18,7 +18,7 @@ const Team = () => {
             <p className="text-xl text-sky-500">CEO: Chief executive officer</p>
           </div>
         </div>
-        <div className="rounded-2xl bg-base-100 shadow-xl 96">
+        <div className="rounded-2xl bg-base-100 shadow-xl ">
           <figure>
             <img
               className="rounded-t-2xl h-96 w-full"
@@ -33,7 +33,7 @@ const Team = () => {
             </p>
           </div>
         </div>
-        <div className="rounded-2xl bg-base-100 shadow-xl 96">
+        <div className="rounded-2xl bg-base-100 shadow-xl ">
           <figure>
             <img
               className="rounded-t-2xl h-96 w-full"
@@ -46,7 +46,7 @@ const Team = () => {
             <p className="text-xl text-sky-500">Software architect</p>
           </div>
         </div>
-        <div className="rounded-2xl bg-base-100 shadow-xl 96">
+        <div className="rounded-2xl bg-base-100 shadow-xl ">
           <figure>
             <img
               className="rounded-t-2xl h-96 w-full"
@@ -59,7 +59,7 @@ const Team = () => {
             <p className="text-xl text-sky-500">CMO: Chief marketing officer</p>
           </div>
         </div>
-        <div className="rounded-2xl bg-base-100 shadow-xl 96">
+        <div className="rounded-2xl bg-base-100 shadow-xl">
           <figure>
             <img
               className="rounded-t-2xl h-96 w-full"
@@ -74,7 +74,7 @@ const Team = () => {
             </p>
           </div>
         </div>
-        <div className="rounded-2xl bg-base-100 shadow-xl 96">
+        <div className="rounded-2xl bg-base-100 shadow-xl">
           <figure>
             <img
               className="rounded-t-2xl h-96 w-full"

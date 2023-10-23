@@ -13,9 +13,9 @@ const BrandProduct = ({ product }) => {
 
   return (
     <>
-      <div className="card card-compact bg-base-100 shadow-xl" data-aos="fade-right">
+      <div className="card card-compact bg-gray-500 shadow-xl" data-aos="fade-right">
         <figure>
-          <img className="h-96" src={photo} alt={name} />
+          <img className="h-96 w-full" src={photo} alt={name} />
         </figure>
         <div className="card-body">
           <h2 className="card-title font-bold text-3xl text-emerald-500">

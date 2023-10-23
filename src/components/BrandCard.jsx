@@ -15,7 +15,7 @@ const BrandCard = ({ card }) => {
     <>
       <Link to={`/brandPro/${brand}`}>
         <div
-          className="card card-compact bg-base-100 shadow-xl"
+          className="card card-compact bg-gray-500 shadow-xl"
           data-aos="fade-right"
         >
           <figure>

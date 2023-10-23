@@ -1,4 +1,7 @@
+import FeedBackForm from "./FeedBackForm";
+
 const FeedBack = () => {
+  
   return (
     <div className="container mx-auto">
       <h1 className="text-5xl font-bold text-lime-500 text-center mt-20 mb-10">
@@ -102,6 +105,7 @@ const FeedBack = () => {
           </div>
         </div>
       </div>
+      <FeedBackForm></FeedBackForm>
     </div>
   );
 };

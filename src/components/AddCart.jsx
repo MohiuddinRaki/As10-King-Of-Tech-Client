@@ -19,7 +19,7 @@ const AddCart = ({ cart, carts, setCarts }) => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`https://b8a10-brandshop-server-side-mohiuddin-raki-anzjhimip.vercel.app/cart/${_id}`, {
+        fetch(`https://b8a10-brandshop-server-side-mohiuddin-raki-7s8v1yz1b.vercel.app/cart/${_id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())
@@ -44,7 +44,7 @@ const AddCart = ({ cart, carts, setCarts }) => {
   }, []);
 
   return (
-    <div className="card bg-base-100 shadow-xl" data-aos="fade-right">
+    <div className="card bg-gray-500 shadow-xl" data-aos="fade-right">
       <figure>
         <img className="h-96" src={photo} alt={name} />
       </figure>
