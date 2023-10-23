@@ -14,11 +14,10 @@ const TeamForm = () => {
       photo,
     };
     console.log(newTeam);
-    // https://b8a10-brandshop-server-side-mohiuddin-raki-7s8v1yz1b.vercel.app
 
     //  send data to the server:
     fetch(
-      "https://b8a10-brandshop-server-side-mohiuddin-raki-7s8v1yz1b.vercel.app/team",
+      "https://b8a10-brandshop-server-side-mohiuddin-raki-39avzeqhv.vercel.app/team",
       {
         method: "POST",
         headers: {

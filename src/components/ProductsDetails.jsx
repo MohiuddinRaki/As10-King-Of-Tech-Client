@@ -16,7 +16,7 @@ const ProductsDetails = () => {
     const newCart = { photo, name, description };
 
     //  send data to the server:
-    fetch("https://b8a10-brandshop-server-side-mohiuddin-raki-7s8v1yz1b.vercel.app/cart", {
+    fetch("https://b8a10-brandshop-server-side-mohiuddin-raki-39avzeqhv.vercel.app/cart", {
       method: "POST",
       headers: {
         "content-type": "application/json",

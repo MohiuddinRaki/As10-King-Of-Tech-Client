@@ -1,7 +1,7 @@
 import Swal from "sweetalert2";
 
 const FeedBackForm = () => {
-  const handleAddProduct = (event) => {
+  const handleAddFeedBack = (event) => {
     event.preventDefault();
     const form = event.target;
     const feedBack = form.feedBack.value;
@@ -12,7 +12,7 @@ const FeedBackForm = () => {
 
     //  send data to the server:
     fetch(
-        "https://b8a10-brandshop-server-side-mohiuddin-raki-7s8v1yz1b.vercel.app/feedback",
+        "https://b8a10-brandshop-server-side-mohiuddin-raki-39avzeqhv.vercel.app/feedback",
       {
         method: "POST",
         headers: {
@@ -38,11 +38,11 @@ const FeedBackForm = () => {
 
   return (
     <>
-      <div className="bg-[#F4F3F0] p-24 my-12">
+      <div className="bg-[#F4F3F0] rounded-2xl p-24 my-12">
         <h2 className="text-center text-6xl font-bold mb-10">
           Write Your FeedBack
         </h2>
-        <form onSubmit={handleAddProduct}>
+        <form onSubmit={handleAddFeedBack}>
           <div className="form-control w-full ">
             <label className="input-group">
               <input

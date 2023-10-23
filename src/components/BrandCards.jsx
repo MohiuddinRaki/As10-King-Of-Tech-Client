@@ -5,6 +5,7 @@ import FeedBack from "./FeedBack";
 import BrandCard from "./BrandCard";
 import GoogleMap from "./GoogleMap";
 import Team from "./Team";
+import TeamMembers from "./TeamMembers";
 
 const BrandCards = () => {
   const brandCard = useLoaderData();
@@ -12,7 +13,6 @@ const BrandCards = () => {
   return (
     <div>
       <Banner></Banner>
-      {brandCard._id}
       <div>
         <h1 className="text-5xl font-bold text-lime-500 text-center mt-20 mb-10">
           OUR Available Brands
@@ -25,6 +25,7 @@ const BrandCards = () => {
       </div>
       <FeedBack></FeedBack>
       <Team></Team>
+      <TeamMembers></TeamMembers>
       <GoogleMap></GoogleMap>
       <Footer></Footer>
     </div>

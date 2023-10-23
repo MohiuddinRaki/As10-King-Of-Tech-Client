@@ -1,11 +1,12 @@
 const Team = () => {
+  
   return (
     <div className="container mx-auto">
       <h1 className="text-5xl font-bold text-lime-500 text-center mt-20 mb-10">
         Team Members
       </h1>
       <div className="p-8 md:p-16 lg:p-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 my-10">
-        <div className="rounded-2xl  bg-base-100 shadow-xl">
+        <div className="rounded-2xl  bg-gray-500 shadow-xl">
           <figure>
             <img
               className="rounded-t-2xl h-96 w-full"
@@ -15,10 +16,10 @@ const Team = () => {
           </figure>
           <div className="card-body">
             <h2 className="card-title text-xl text-red-400">Rakib</h2>
-            <p className="text-xl text-sky-500">CEO: Chief executive officer</p>
+            <p className="text-xl text-teal-500">CEO: Chief executive officer</p>
           </div>
         </div>
-        <div className="rounded-2xl bg-base-100 shadow-xl ">
+        <div className="rounded-2xl bg-gray-500 shadow-xl ">
           <figure>
             <img
               className="rounded-t-2xl h-96 w-full"
@@ -28,12 +29,12 @@ const Team = () => {
           </figure>
           <div className="card-body">
             <h2 className="card-title text-xl text-red-400">Srabon</h2>
-            <p className="text-xl text-sky-500">
+            <p className="text-xl text-teal-500">
               CTO: Chief technology officer
             </p>
           </div>
         </div>
-        <div className="rounded-2xl bg-base-100 shadow-xl ">
+        <div className="rounded-2xl bg-gray-500 shadow-xl ">
           <figure>
             <img
               className="rounded-t-2xl h-96 w-full"
@@ -43,10 +44,10 @@ const Team = () => {
           </figure>
           <div className="card-body">
             <h2 className="card-title text-xl text-red-400">Biplob</h2>
-            <p className="text-xl text-sky-500">Software architect</p>
+            <p className="text-xl text-teal-500">Software architect</p>
           </div>
         </div>
-        <div className="rounded-2xl bg-base-100 shadow-xl ">
+        <div className="rounded-2xl bg-gray-500 shadow-xl ">
           <figure>
             <img
               className="rounded-t-2xl h-96 w-full"
@@ -56,10 +57,10 @@ const Team = () => {
           </figure>
           <div className="card-body">
             <h2 className="card-title text-xl text-red-400">Sagor</h2>
-            <p className="text-xl text-sky-500">CMO: Chief marketing officer</p>
+            <p className="text-xl text-teal-500">CMO: Chief marketing officer</p>
           </div>
         </div>
-        <div className="rounded-2xl bg-base-100 shadow-xl">
+        <div className="rounded-2xl bg-gray-500 shadow-xl">
           <figure>
             <img
               className="rounded-t-2xl h-96 w-full"
@@ -69,12 +70,12 @@ const Team = () => {
           </figure>
           <div className="card-body">
             <h2 className="card-title text-xl text-red-400">Rudro</h2>
-            <p className="text-xl text-sky-500">
+            <p className="text-xl text-teal-500">
               Chief financial officer (CFO)
             </p>
           </div>
         </div>
-        <div className="rounded-2xl bg-base-100 shadow-xl">
+        <div className="rounded-2xl bg-gray-500 shadow-xl">
           <figure>
             <img
               className="rounded-t-2xl h-96 w-full"
@@ -84,7 +85,7 @@ const Team = () => {
           </figure>
           <div className="card-body">
             <h2 className="card-title text-xl text-red-400">Niaz</h2>
-            <p className="text-xl text-sky-500">Business development manager</p>
+            <p className="text-xl text-teal-500">Business development manager</p>
           </div>
         </div>
       </div>

@@ -29,7 +29,7 @@ const UpdateProduct = () => {
     console.log(updateProduct);
 
     //  send data to the server:
-    fetch(`https://b8a10-brandshop-server-side-mohiuddin-raki-7s8v1yz1b.vercel.app/product/${_id}`, {
+    fetch(`https://b8a10-brandshop-server-side-mohiuddin-raki-39avzeqhv.vercel.app/product/${_id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",

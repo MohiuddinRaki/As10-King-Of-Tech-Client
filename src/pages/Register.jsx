@@ -43,7 +43,7 @@ const Register = () => {
         });
         const newUser = { email };
         //  send data to the server:
-        fetch("https://b8a10-brandshop-server-side-mohiuddin-raki-7s8v1yz1b.vercel.app/user", {
+        fetch("https://b8a10-brandshop-server-side-mohiuddin-raki-39avzeqhv.vercel.app/user", {
           method: "POST",
           headers: {
             "content-type": "application/json",
