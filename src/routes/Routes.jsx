@@ -77,7 +77,7 @@ const Routes = createBrowserRouter([
           ),
       },
       {
-        path: "/cart",
+        path: "/cart/:email",
         loader: () =>
           fetch(
             "https://b8a10-brandshop-server-side-mohiuddin-raki-6bicgiy8b.vercel.app/cart"

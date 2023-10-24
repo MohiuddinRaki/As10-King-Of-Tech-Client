@@ -1,7 +1,7 @@
 # King Of Tech
 
 ## Click here for the live link: 
-[https://6537f47a8a368814ecfeb549--poetic-lebkuchen-72add5.netlify.app]
+[https://65381957daa56702c0b268cf--poetic-lebkuchen-72add5.netlify.app]
 
 
 ## Project Features

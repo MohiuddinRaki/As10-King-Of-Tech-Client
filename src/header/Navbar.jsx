@@ -17,7 +17,9 @@ const Navbar = () => {
         <NavLink to="/addProduct">Add Product</NavLink>
       </li>
       <li className="text-lg font-medium text-white">
-        <NavLink to="/cart">My Cart</NavLink>
+        {
+          user?.email ? <NavLink to={`/cart/${user.email}`}>My Cart</NavLink> : <NavLink to="/cart/email">My Cart</NavLink>
+        }
       </li>
       <li className="text-lg font-medium text-white">
         <NavLink to="/login">Login</NavLink>
