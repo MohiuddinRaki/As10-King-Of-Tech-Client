@@ -11,10 +11,7 @@ import BrandCards from "../components/BrandCards";
 import BrandProducts from "../components/BrandProducts";
 import BrandUnic from "../components/BrandUnic";
 import ProductsDetails from "../components/ProductsDetails";
-import TeamForm from "../components/TeamForm";
 import Team from "../components/Team";
-import TeamMembers from "../components/TeamMembers";
-import FeedBack from "../components/FeedBack";
 
 const Routes = createBrowserRouter([
   {
@@ -27,7 +24,7 @@ const Routes = createBrowserRouter([
         element: <BrandCards></BrandCards>,
         loader: () =>
           fetch(
-            "https://b8a10-brandshop-server-side-mohiuddin-raki-39avzeqhv.vercel.app/brandu"
+            "https://b8a10-brandshop-server-side-mohiuddin-raki-6bicgiy8b.vercel.app/brandu"
           ),
       },
       {
@@ -35,20 +32,10 @@ const Routes = createBrowserRouter([
         element: <Team></Team>,
       },
       {
-        path: "/",
-        element: <TeamMembers></TeamMembers>,
-        loader: () => fetch("https://b8a10-brandshop-server-side-mohiuddin-raki-39avzeqhv.vercel.app/team")
-      },
-      {
-        path: "/",
-        element: <FeedBack></FeedBack>,
-        loader: () => fetch("https://b8a10-brandshop-server-side-mohiuddin-raki-39avzeqhv.vercel.app/feedback")
-      },
-      {
         path: "/brandPro/:brand",
         loader: () =>
           fetch(
-            "https://b8a10-brandshop-server-side-mohiuddin-raki-39avzeqhv.vercel.app/product"
+            "https://b8a10-brandshop-server-side-mohiuddin-raki-6bicgiy8b.vercel.app/product"
           ),
         element: (
           <PrivateRoute>
@@ -60,7 +47,7 @@ const Routes = createBrowserRouter([
         path: "/brand/:_id",
         loader: () =>
           fetch(
-            "https://b8a10-brandshop-server-side-mohiuddin-raki-39avzeqhv.vercel.app/product"
+            "https://b8a10-brandshop-server-side-mohiuddin-raki-6bicgiy8b.vercel.app/product"
           ),
         element: (
           <PrivateRoute>
@@ -86,14 +73,14 @@ const Routes = createBrowserRouter([
         element: <UpdateProduct></UpdateProduct>,
         loader: () =>
           fetch(
-            "https://b8a10-brandshop-server-side-mohiuddin-raki-39avzeqhv.vercel.app/product"
+            "https://b8a10-brandshop-server-side-mohiuddin-raki-6bicgiy8b.vercel.app/product"
           ),
       },
       {
         path: "/cart",
         loader: () =>
           fetch(
-            "https://b8a10-brandshop-server-side-mohiuddin-raki-39avzeqhv.vercel.app/cart"
+            "https://b8a10-brandshop-server-side-mohiuddin-raki-6bicgiy8b.vercel.app/cart"
           ),
         element: (
           <PrivateRoute>
@@ -108,11 +95,7 @@ const Routes = createBrowserRouter([
       {
         path: "login",
         element: <Login></Login>,
-      },
-      {
-        path: "/team",
-        element: <TeamForm></TeamForm>,
-      },
+      }
     ],
   },
 ]);

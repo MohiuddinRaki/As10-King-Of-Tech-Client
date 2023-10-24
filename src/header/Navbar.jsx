@@ -2,12 +2,14 @@ import { useContext } from "react";
 import { AuthContext } from "../providers/AuthProvider";
 import { Link, NavLink } from "react-router-dom";
 import "./Navbar.css";
+import DarkMode from "../components/DarkMode";
 
 const Navbar = () => {
   const { user, logOutUser } = useContext(AuthContext);
 
   const navLinks = (
     <>
+      <li></li>
       <li className="text-lg font-medium text-white">
         <NavLink to="/">Home</NavLink>
       </li>
@@ -20,11 +22,11 @@ const Navbar = () => {
       <li className="text-lg font-medium text-white">
         <NavLink to="/login">Login</NavLink>
       </li>
+      <li className="text-lg font-medium text-white">
+        <DarkMode></DarkMode>
+      </li>
       <li className="text-lg font-medium text-white hidden">
         <NavLink to="/brandUnic">BrandUnic</NavLink>
-      </li>
-      <li className="text-lg font-medium text-white">
-        <NavLink to="/team">Team</NavLink>
       </li>
     </>
   );
@@ -36,7 +38,10 @@ const Navbar = () => {
           <div className="dropdown dropdown-start">
             <label tabIndex={0} className="btn btn-ghost btn-circle">
               <div className="items-center mr-2">
-                <img className="rounded-full" src="https://i.ibb.co/2hXPm1h/e6c16c6fdc213eae670cae97c487582ad720f85e-351x351.png" />
+                <img
+                  className="rounded-full"
+                  src="https://i.ibb.co/2hXPm1h/e6c16c6fdc213eae670cae97c487582ad720f85e-351x351.png"
+                />
               </div>
             </label>
             <ul

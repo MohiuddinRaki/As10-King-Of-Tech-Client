@@ -24,7 +24,7 @@ const AddProduct = () => {
     console.log(newProduct);
 
     //  send data to the server:
-    fetch("https://b8a10-brandshop-server-side-mohiuddin-raki-39avzeqhv.vercel.app/product", {
+    fetch("https://b8a10-brandshop-server-side-mohiuddin-raki-6bicgiy8b.vercel.app/product", {
       method: "POST",
       headers: {
         "content-type": "application/json",

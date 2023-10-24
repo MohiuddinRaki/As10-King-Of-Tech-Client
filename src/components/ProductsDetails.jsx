@@ -2,10 +2,13 @@ import { useLoaderData, useParams } from "react-router-dom";
 import Swal from "sweetalert2";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
+import { AuthContext } from "../providers/AuthProvider";
 
 const ProductsDetails = () => {
   const products = useLoaderData();
+  const { user } = useContext(AuthContext);
+  const email = user.email;
   const { _id } = useParams();
   const product = products.find((product) => product._id === _id);
 
@@ -13,16 +16,19 @@ const ProductsDetails = () => {
     const photo = product.photo;
     const name = product.name;
     const description = product.description;
-    const newCart = { photo, name, description };
+    const newCart = { photo, name, description, email };
 
     //  send data to the server:
-    fetch("https://b8a10-brandshop-server-side-mohiuddin-raki-39avzeqhv.vercel.app/cart", {
-      method: "POST",
-      headers: {
-        "content-type": "application/json",
-      },
-      body: JSON.stringify(newCart),
-    })
+    fetch(
+      "https://b8a10-brandshop-server-side-mohiuddin-raki-6bicgiy8b.vercel.app/cart",
+      {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(newCart),
+      }
+    )
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
@@ -47,7 +53,11 @@ const ProductsDetails = () => {
       data-aos="fade-right"
     >
       <figure>
-        <img className="w-full h-[500px]" src={product.photo} alt={product.name} />
+        <img
+          className="w-full h-[500px]"
+          src={product.photo}
+          alt={product.name}
+        />
       </figure>
       <div className="card-body">
         <h2 className="card-title">{product.description}</h2>

@@ -1,7 +1,7 @@
 # King Of Tech
 
 ## Click here for the live link: 
-[https://65243cddda108e0cee677524--cheerful-concha-87cac6.netlify.app/]
+[https://6537f47a8a368814ecfeb549--poetic-lebkuchen-72add5.netlify.app]
 
 
 ## Project Features

@@ -19,9 +19,12 @@ const AddCart = ({ cart, carts, setCarts }) => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`https://b8a10-brandshop-server-side-mohiuddin-raki-39avzeqhv.vercel.app/cart/${_id}`, {
-          method: "DELETE",
-        })
+        fetch(
+          `https://b8a10-brandshop-server-side-mohiuddin-raki-6bicgiy8b.vercel.app/cart/${_id}`,
+          {
+            method: "DELETE",
+          }
+        )
           .then((res) => res.json())
           .then((data) => {
             console.log(data);
@@ -44,20 +47,27 @@ const AddCart = ({ cart, carts, setCarts }) => {
   }, []);
 
   return (
-    <div className="card bg-gray-500 shadow-xl" data-aos="fade-right">
-      <figure>
-        <img className="h-96" src={photo} alt={name} />
-      </figure>
-      <div className="card-body">
-        <h2 className="card-title font-bold text-4xl text-amber-500">{name}</h2>
-        <p className=" font-medium text-emerald-500">{description}</p>
-        <div className="card-actions justify-start">
-          <button onClick={() => handleDelete(_id)} className="btn btn-primary">
-            Delete
-          </button>
+    <>
+      <div className="card bg-gray-500 shadow-xl" data-aos="fade-right">
+        <figure>
+          <img className="h-96" src={photo} alt={name} />
+        </figure>
+        <div className="card-body">
+          <h2 className="card-title font-bold text-4xl text-amber-500">
+            {name}
+          </h2>
+          <p className=" font-medium text-emerald-500">{description}</p>
+          <div className="card-actions justify-start">
+            <button
+              onClick={() => handleDelete(_id)}
+              className="btn btn-primary"
+            >
+              Delete
+            </button>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

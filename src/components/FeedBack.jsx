@@ -1,5 +1,3 @@
-import FeedBackForm from "./FeedBackForm";
-
 const FeedBack = () => {
   return (
     <>
@@ -120,7 +118,6 @@ const FeedBack = () => {
             </div>
           </div>
         </div>
-        <FeedBackForm></FeedBackForm>
       </div>
     </>
   );
